@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+/* initialisation */
+
+
+*:root{
+    box-sizing: border-box;
+    font-family: "Roboto","Nunito";
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.nav_Container{
+    background-color: rgb(16, 188, 194);
+   
+}
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px rgb(240, 235, 235);
+    width: auto; 
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.navbar__second{
+    display:none;
+}
+.navbar__title{
+   text-transform: uppercase;
+   flex: 1;
+   margin-left: 0.4rem;
+}
+
+.navbar__items{
+    display:flex;
+    flex: 3;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+.navbar__items i{
+   font-size: 1rem;
+
+}
+.navbar__name{
+    align-self: center;
+    display:flex;
+    flex-direction: row;
+    font-size: 1.25rem;
+    margin-left: 0.6em;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+.navbar__name i{
+    font-size: 2rem;
+    align-self: center;
+    margin-right: 0.3rem;
+}
+
+.navbar__logout{
+    align-self: center;
+    
+    cursor: pointer;
+}
+.createTD{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin-right:4rem ;
+    margin-bottom: 3rem;
+    /* box-shadow:  1px 4px 1px rgba(27, 27, 228, 0.897); */
+    border-radius: 50%;
+}
+.createTD i{
+    font-size: 4rem;
+    color:rgba(27, 27, 228, 0.897);
+    cursor: pointer;
+}
+.ContainerTd{
+    display: grid;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 2em;
+    
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    
+}
+.Todo{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid;
+    margin: 0.8em;
+}
+.todoTitle{
+    text-align: center;
+    background-color: #1877f2;
+    margin: 0;
+    color: #f5f5f5;
+    font-family: 'Nunito';
+    text-transform: uppercase;
+}
+.todoList{
+    list-style: auto;
+    display: flex;
+    flex-direction: column;
+}
+.TodoItem{
+    font-size: 1.7em;
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction:row
+}
+#red{
+    color: rgb(236 63 63 / 91%);
+    margin-right: 1em;
+}
+#green{
+    color:rgb(63 236 75 / 91%);
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 871px) {
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width:100%;
+        border:none
+    }
+    .navbar__items{
+        display:none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .navbar__name{
+        margin-left: 0.4rem;
+    }
+    .navbar__logout{
+        align-self: flex-start;
+        margin-bottom: 1rem;
+        margin-left: 0.4rem;
+    }
+    .createTD{
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    .navbar__second{
+        display: block;
+        font-size: 1.75rem;
+        align-self: center;
+        justify-self: flex-end;
+        margin-right: 0.4rem ;
+        cursor: pointer;
+    }
+    .navbar__second i:nth-child(2){
+        transform: rotate(45deg);
+        display:none;
+
+    }
+   
+}
+small {
+    display: grid;
+    color: #b5b5b5;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Poppins';
+  }
+@media screen and (min-width:532px){
+    .navbar__name{
+        align-self:start;
+    }
+}

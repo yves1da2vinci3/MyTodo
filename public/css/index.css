@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+/* initialisation */
+
+
+*:root{
+    box-sizing: border-box;
+    font-family: "Roboto","Nunito";
+}
+
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.Container_Title{
+     font-family: "Nunito";
+     font-size: 4rem;
+     text-transform: uppercase;
+     font-weight: 700;
+}
+
+.Container_image{
+    height: 14rem
+}
+.Container_image img{
+    max-width: 80%;
+    max-height: 70%;
+    margin-left: 1.5em;
+
+}
+
+.Container_Description{
+    display: block;
+font-size: 1.5rem;
+margin-bottom: 2rem;
+
+}
+.info{
+    font-weight: 500; 
+}
+.Container_btn{
+    display: flex;
+    flex-direction: column;
+}
+.Container_btn a{
+    text-decoration: none;
+}
+.Container_btn a:visited{
+    color: aliceblue;
+}
+
+.btn{
+    padding: 0.7rem 6rem;
+    background-color: rgb(16, 174, 214);
+    color: aliceblue;
+    font-family: "Nunito";
+    border-radius: 5px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+@media screen and  ( max-width : 798px ) {
+    .Container_Description{
+        
+    font-size: 1.25rem;
+
+    
+    }
+
+}
+
+
+@media screen and  ( max-width : 591px ) {
+    .Container_Description{
+        
+    font-size: 0.9rem;
+ font-weight: 700;
+ text-align: center;
+    
+    }
+
+}

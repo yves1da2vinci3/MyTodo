@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/signup.css">
+
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="Container">
+        <form class="form_control">
+            <h1 class="ErrorMessage" style="display: none;"></h1>
+            <h1 class="form_title">
+                Create account
+            </h1>
+            <p> already have an account? <a href="/auth/login">Sign in</a></p>
+            <div class="Names">
+                <input type="text" id="fname" placeholder="First name" >
+                <input type="text" id="lname" placeholder="Last name" >
+            </div>
+            <input type="email" id="Email" placeholder="E-mail">
+            <input type="password" id="pwd" placeholder="password" >
+            <input type="password" id="Cpwd" placeholder="Confirmpassword" >
+            <input type="button"  id="SignupBtn" value="Sign up">
+        </form>
+    </div>
+<script src="/js/Signup.js"></script>
+</body>
+</html>

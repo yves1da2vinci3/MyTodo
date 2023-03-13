@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="Container">
+        
+        <form class="Container_form">
+            <h1 class="form_title">Welcome back {{.message}}</h1>
+            <h1 class="ErrorMessage" style="display: none;"></h1>
+            <input id="Email" type="email" placeholder="Enter your email" class="form_input" > 
+        
+            <input id="Password" type="password" placeholder="Enter your password" class="form_input"> 
+            <input type="button" id="LoginBtn" class="btn" value="sign In">
+            <p> no account? <a href="/auth/signup">Sign up</a></p>
+        </form>
+        <script src="/js/Login.js"></script>
+    </div>
+</div>
+
+</body>
+</html>
