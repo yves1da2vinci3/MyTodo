@@ -1,0 +1,17 @@
+# .air.toml
+root = "."
+tmp_dir = "tmp"
+build_args = ["-tags", "development"]
+delay = 1000
+
+[build]
+  bin = "main"
+  ldflags = ["-w", "-s"]
+  exclude_dir = ["tmp/*"]
+  exclude_file = ["go.sum", "go.mod"]
+  ignore_dot = false
+  watch_ext = ["go"]
+
+[run]
+  addr = "localhost:3000"
+  env = "development"
